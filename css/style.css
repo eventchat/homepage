@@ -1,0 +1,111 @@
+html, body {
+  width: 100%;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #FC9D0F),
+    color-stop(1, #F5E35D)
+  );
+  background-image: -o-linear-gradient(top, #FC9D0F 0%, #F5E35D 100%);
+  background-image: -moz-linear-gradient(top, #FC9D0F 0%, #F5E35D 100%);
+  background-image: -webkit-linear-gradient(top, #FC9D0F 0%, #F5E35D 100%);
+  background-image: -ms-linear-gradient(top, #FC9D0F 0%, #F5E35D 100%);
+  background-image: linear-gradient(to top, #FC9D0F 0%, #F5E35D 100%);
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+#header {
+  width: 100%;
+  height: 425px;
+  position: relative;
+}
+
+#hand {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 335px;
+  height: 425px;
+  background-image: url('../img/hand.png');
+  background-size: 335px 425px;
+  opacity: 0;
+  -webkit-transition: left 1s, opacity 1s;
+     -moz-transition: left 1s, opacity 1s;
+       -o-transition: left 1s, opacity 1s;
+          transition: left 1s, opacity 1s;
+}
+
+#hand.in {
+  left: 0;
+  opacity: 1;
+}
+
+#text {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  opacity: 0;
+  -webkit-transition: left 1s, opacity 1s;
+     -moz-transition: left 1s, opacity 1s;
+       -o-transition: left 1s, opacity 1s;
+          transition: left 1s, opacity 1s;
+}
+
+#text.in {
+  left: 45%;
+  opacity: 1;
+}
+
+#title {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+}
+
+#byline {
+  margin-top: 20px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  color: white;
+}
+
+#download {
+  display: block;
+  margin-top: 30px;
+  background-image: url("../img/download.png");
+  background-size: 173px 58px;
+  width: 173px;
+  height: 58px;
+}
+
+#columns {
+  width: 750px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.column {
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.desc {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  color: white;
+  width: 200px;
+  margin: 20px auto;
+}
+
