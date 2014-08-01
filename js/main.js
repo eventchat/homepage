@@ -19,4 +19,10 @@ $(function () {
   }, {
     offset: 500
   });
+
+  $('#footer').waypoint(function () {
+    $(this).addClass('in');
+  }, {
+    offset: '100%'
+  });
 });

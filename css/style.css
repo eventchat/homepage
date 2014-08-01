@@ -121,10 +121,19 @@ html, body {
 #footer {
   position: absolute;
   bottom: 0;
-  height: 250px;
+  height: 0;
   z-index: 100;
   width: 100%;
   background-color: #fc9d0f;
+  overflow: hidden;
+  -webkit-transition: height 1s;
+     -moz-transition: height 1s;
+       -o-transition: height 1s;
+          transition: height 1s;
+}
+
+#footer.in {
+  height: 250px;
 }
 
 #footer-columns {
